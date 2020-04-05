@@ -23,20 +23,14 @@ $Surname = Get-Random $Surnames
 $Surname = $Surname.Substring(0,1).ToUpper() + $Surname.Substring(1)
 
 if ($Departments -notcontains $Dept) {
-    Write-Error "Not a valid department"
     $Dept = Get-Random $Departments
 }
 
 if ($City -and $State) {
-    try {
-        $City = $CityData | Where-Object {$_.city -eq $City -and $_.state_id -eq $State}
-    }
-    catch {
-        Write-Error "Failed to retrieve city data"
-        $City = Get-Random $CityData
-    }
+    $City = $CityData | Where-Object {$_.city -eq $City -and $_.state_id -eq $State}
 }
-else {
+
+if (-not ($City.Count -gt 1)) {
     $City = Get-Random $CityData
 }
 
