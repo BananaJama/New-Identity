@@ -17,12 +17,12 @@ Public Azure app to generate a random identity for use in whatever you want.  Re
 
 Accepts the following parameters
   * Dept
-  ** Forces identity to return in a specific department
-  ** If the value supplied does not exist in the getDepts it will randomly choose one
+      - Forces identity to return in a specific department
+      - If the value supplied does not exist in the getDepts it will randomly choose one
   * City and State
-  ** Required to be used together
-  ** Will return the selected city in that state
-  ** If no city is returned a random city will be chosen
+      - Required to be used together
+      - Will return the selected city in that state
+      - If no city is returned a random city will be chosen
   
 Examples:
 `Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity'`
