@@ -1,5 +1,5 @@
 # New-Identity
-Random name generator run as an AZ Function
+Random Identity generator running as an Azure Function
 
 Public Azure app to generate a random identity for use in whatever you want.  Returns the following:
 
