@@ -12,15 +12,8 @@
     },
     {
       "type": "blob",
-      "name": "GivenNames",
-      "path": "uploads/GivenNames.txt",
-      "connection": "AzureWebJobsStorage",
-      "direction": "in"
-    },
-    {
-      "type": "blob",
-      "name": "Surnames",
-      "path": "uploads/Surnames.txt",
+      "name": "Depts",
+      "path": "uploads/Depts.txt",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
     },
