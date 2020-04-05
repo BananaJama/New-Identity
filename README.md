@@ -24,20 +24,20 @@ Accepts the following parameters
       - Will return the selected city in that state
       - If no city is returned a random city will be chosen
   
-Examples:
-`Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity'`
-`Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity?Dept=Marketing'`
-`Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity?City=Raleigh&State=NC'`
+Examples:  
+`Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity'`  
+`Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity?Dept=Marketing'`  
+`Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity?City=Raleigh&State=NC'`  
 `Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/newIdentity?City=Raleigh&State=NC&Dept=Purchasing'`
 
 ### Get all cities and their respective data:
 `https://genident.azurewebsites.net/api/getCities`
 
-Example:
+Example:  
 `Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/getCities'`
 
 ### Get all departments for use
 `https://genident.azurewebsites.net/api/getDepts`
 
-Example:
+Example:  
 `Invoke-RestMethod -Uri 'https://genident.azurewebsites.net/api/getDepts'`
