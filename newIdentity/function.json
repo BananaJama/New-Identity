@@ -27,7 +27,7 @@
     {
       "type": "blob",
       "name": "CityData",
-      "path": "uploads/CityData.json",
+      "path": "uploads/CityState.json",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
     },
